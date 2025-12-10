@@ -5,24 +5,255 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
 
 <body>
     <!-- HEADER -->
-    <header class="header"></header>
+    <header class="header w-full z-[100] bg-transparent !bg-transparent absolute top-0">
+        <nav
+            class="text-sm font-extralight bg-transparent !bg-transparent w-full z-[100] top-0 start-0 border-default [&_a]:font-light  [&_a]:text-base">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="./images/logo.svg" class="h-7" alt="Flowbite Logo" />
+                    <span class="self-center text-xl text-heading font-semibold whitespace-nowrap"></span>
+                </a>
+                <div class="inline-flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <button type="button"
+                        class="text-black bg-white hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-full text-sm px-8 py-3 focus:outline-none header_btn">Sing
+                        Up Now
+                    </button>
+                    <button data-collapse-toggle="navbar-cta" type="button"
+                        class="inline-flex items-center p-2 w-9 h-9 justify-center text-sm text-body rounded-base md:hidden !bg-red-500 !hover:bg-red-600  hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary "
+                        aria-controls="navbar-cta" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                                d="M5 7h14M5 12h14M5 17h14" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+                    <ul
+                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-transparent !bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-heading rounded hover:bg-red-100 hover:text-red-600 md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-heading rounded hover:bg-red-100 hover:text-red-600 md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">About</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-heading rounded hover:bg-red-100 hover:text-red-600 md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-heading rounded hover:bg-red-100 hover:text-red-600 md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">Features</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-heading rounded hover:bg-red-100 hover:text-red-600 md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">How
+                                It Work</a>
+                        </li>
+                        <li class="flex items-center gap-1">
+                            <a href="#"
+                                class="block py-2 px-3 text-heading rounded hover:bg-red-100 hover:text-red-600 md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">Pages
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-heading rounded hover:bg-red-100 hover:text-red-600 md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
     <!-- BANNER -->
-    <section class="banner"></section>
+    <section class="section banner overflow-visible mt-0 pt-24 z-[1] relative ">
+        <img class=" absolute top-0 right-0  w-[29%] z-[1]" src="./images/banner-shape.svg" alt="">
+        <div class="container mx-auto max-w-[1202px] px-3 w-full z-[10] relative ">
+            <div class="banner_item flex items-center  z-30">
+                <div class="banner__left leading-[2]">
+                    <div class=" block max-w-xl p-6  rounded-base ">
+                        <h1
+                            class=" font-['Merriweather',serif] font-[950] leading-[1] text-[#222] mb-3 text-[55px] tracking-[1px]">
+                            <span class="block">Scale design & dev</span>
+                            <span class="block">operations with</span>
+                            <span class="block">Avocode Enterprise</span>
+                        </h1>
+                        <p class="text-body mb-6 text-gray-500">A fully integrated suite of authentication & authoriz
+                            products,<br>
+                            Stytch’s platform removes the headache of..</p>
+                        <a href="#"
+                            class="inline-flex items-center text-black bg-white border-red font-medium leading-5 text-sm px-6 py-3 rounded-full border border-gray-200 shadow-lg shadow-gray-300/60 hover:shadow-none transition-all">
+                            Dowload The Them
+
+                        </a>
+                    </div>
+                </div>
+                <div class="banner__right">
+                    <img class="w-[85%] object-contain max-w-full h-auto" src="./images/banner-img.png" width="6"
+                        height="6" alt="" />
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
     <!-- KEY FEATURES -->
-    <section class="key_feature"></section>
+    <section class="section key_feature pt-[100px]">
+        <section class="section key-feature relative">
+            <img class="absolute left-0 top-0 -z-[1] -translate-y-1/2" src="./images/feature-shape.svg" alt="" />
+            <div class="container">
+                <div class="row flex justify-between text-center lg:text-start">
+                    <div class="lg:col-5 font-['Merriweather',serif] font-[950] leading-[1] text-[#222] mb-3 text-[45px] tracking-[1px]">
+                        <h2>The Highlighting <br>
+                            Part Of Our Solution</h2>
+                    </div>
+                    <div class="mt-6 lg:col-5 lg:mt-0 text-gray-500">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Morbi egestas
+                            Werat viverra id et <br> aliquet. vulputate egestas sollicitudin .
+                        </p>
+                    </div>
+                </div>
+                <div class="key-feature-grid mt-10 grid grid-cols-2 gap-7 md:grid-cols-3 xl:grid-cols-4">
+                    <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
+                        <div>
+                            <h3 class="h4 text-xl lg:text-2xl">Live Caption</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <span class="icon mt-4">
+                            <img class="objec-contain" src="./images/feature-icon-1.svg" alt="" />
+                        </span>
+                    </div>
+                    <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
+                        <div>
+                            <h3 class="h4 text-xl lg:text-2xl">Smart Reply</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <span class="icon mt-4">
+                            <img class="objec-contain" src="./images/feature-icon-2.svg" alt="" />
+                        </span>
+                    </div>
+                    <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
+                        <div>
+                            <h3 class="h4 text-xl lg:text-2xl">Sound Amplifier</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <span class="icon mt-4">
+                            <img class="objec-contain" src="./images/feature-icon-3.svg" alt="" />
+                        </span>
+                    </div>
+                    <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
+                        <div>
+                            <h3 class="h4 text-xl lg:text-2xl">Gesture Navigation</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <span class="icon mt-4">
+                            <img class="objec-contain" src="./images/feature-icon-4.svg" alt="" />
+                        </span>
+                    </div>
+                    <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
+                        <div>
+                            <h3 class="h4 text-xl lg:text-2xl">Dark Theme</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <span class="icon mt-4">
+                            <img class="objec-contain" src="./images/feature-icon-5.svg" alt="" />
+                        </span>
+                    </div>
+                    <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
+                        <div>
+                            <h3 class="h4 text-xl lg:text-2xl">Privacy Controls</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <span class="icon mt-4">
+                            <img class="objec-contain" src="./images/feature-icon-6.svg" alt="" />
+
+                        </span>
+                    </div>
+                    <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
+                        <div>
+                            <h3 class="h4 text-xl lg:text-2xl">Location Controls</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <span class="icon mt-4">
+                            <img class="objec-contain" src="./images/feature-icon-7.svg" alt="" />
+                        </span>
+                    </div>
+                    <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
+                        <div>
+                            <h3 class="h4 text-xl lg:text-2xl">Security Updates</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <span class="icon mt-4">
+                            <img class="objec-contain" src="./images/feature-icon-8.svg" alt="" />
+                        </span>
+                    </div>
+                    <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
+                        <div>
+                            <h3 class="h4 text-xl lg:text-2xl">Focus Mode</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <span class="icon mt-4">
+                            <img class="objec-contain" src="./images/feature-icon-9.svg" alt="" />
+                        </span>
+                    </div>
+                    <div class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg">
+                        <div>
+                            <h3 class="h4 text-xl lg:text-2xl">Family Link</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                        <span class="icon mt-4">
+                            <img class="objec-contain" src="./images/feature-icon-10.svg" alt="" />
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
     <!-- SERVICES -->
-    <section class="services"></section>
+    <section class="section services"></section>
     <!-- REVEIWS -->
-    <section class="reveiws"></section>
+    <section class="section reveiws"></section>
     <!-- HELPING -->
-    <section class="helping"></section>
+    <section class="section helping"></section>
     <!-- FOOTER -->
-    <section class="footer"></section>
+    <section class="section footer"></section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
 </body>
 
 </html>

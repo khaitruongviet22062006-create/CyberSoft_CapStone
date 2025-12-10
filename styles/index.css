@@ -1,0 +1,34 @@
+body {
+    background-image: url(/images/body-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.625;
+}
+
+.header ul li:nth-child(4) {
+    display: flex;
+}
+
+.header ul {
+    font-size: 200;
+}
+
+
+
+
+
+
+
+
+
+.banner__left {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.banner__right {
+    flex: 0 0 auto;
+    width: 50%;
+}
